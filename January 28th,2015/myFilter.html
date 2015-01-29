@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+	<meta charset="UTF-8">
+	<title>Januar 28th,2015</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	
+</head>
+<body>
+	{{'Varman' | filter1}}
+
+	
+</body>
+<script>
+	var myModule=angular.module('myModule',[])
+	myModule.filter('filter1',function(){
+		return function(string){
+			return  string +'????'
+		}
+	})
+</script>
+</html>

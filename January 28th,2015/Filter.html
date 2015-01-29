@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+	<meta charset="UTF-8">
+	<title>Januar 28th,2015</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	
+</head>
+<body>
+	{{ 130 | date}}<br>
+	<!-- 13位数字为毫秒从1970年1月1日开始算 -->
+	{{ 1304378948024 | date:"MM/dd/yyyy @ h:mma"}} <br>
+	{{ 2110-05-03  | date:"yyyy-MM-dd hh:mm:ss"}}
+
+	
+</body>
+<script>
+	var myModule=angular.module('myModule',[])
+</script>
+</html>

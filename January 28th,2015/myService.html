@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+	<meta charset="UTF-8">
+	<title>Januar 28th,2015</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/myService.js"></script>
+</head>
+<body>
+	<div ng-controller="serviceController">
+		<label for="">用户名:</label>
+		<input type="text" ng-model="username" placeholder="Enter username">
+		<pre ng-show="username">{{ users }}</pre>
+	</div>
+	
+</body>
+</html>
